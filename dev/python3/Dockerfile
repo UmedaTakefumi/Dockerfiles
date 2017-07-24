@@ -16,7 +16,26 @@ RUN sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode st
 RUN apt-get -y update
 RUN apt-get -y install code
 
-CMD ["/bin/bash"]
+RUN useradd -m umetake
+RUN ln -s /proc/self/fd /dev/fd
+
+WORKDIR /home/umetake
+USER umetake
+
+RUN git clone git://github.com/yyuu/pyenv.git .pyenv
+
+ENV HOME  /home/umetake
+ENV PYENV_ROOT $HOME/.pyenv
+ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
+
+RUN pyenv install 3.6.1
+RUN pyenv global 3.6.1
+RUN pyenv rehash
+
+RUN pip install --egg scons
+
+
+
 
 
 
