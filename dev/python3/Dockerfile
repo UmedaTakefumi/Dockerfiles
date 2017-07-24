@@ -32,7 +32,7 @@ RUN pyenv install 3.6.1
 RUN pyenv global 3.6.1
 RUN pyenv rehash
 
-RUN pip install --egg scons
+RUN pip install ptvsd
 
 
 
