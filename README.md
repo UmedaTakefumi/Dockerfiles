@@ -27,7 +27,7 @@ sudo groupadd docker
 sudo usermod -aG docker umetake
 ```
 
-https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
+* https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
 
 ## Dockerのインストール / MacOSX sierra
 
