@@ -24,7 +24,7 @@ sudo apt-get install docker-ce
 
 sudo groupadd docker
 
-sudo usermod -aG docker andrew-waldfeld
+sudo usermod -aG docker umetake
 ```
 
 https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
