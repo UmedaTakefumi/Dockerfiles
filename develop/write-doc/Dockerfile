@@ -11,7 +11,10 @@ RUN git clone https://github.com/riywo/node-build.git ~/.ndenv/plugins/node-buil
 RUN echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bash_profile
 RUN echo 'eval "$(ndenv init -)"' >> ~/.bash_profile
 
-RUN exec $SHELL -l
+#RUN exec $SHELL -l
+ENV PATH .ndenv/shims:.ndenv/bin:$PATH
+
+RUN echo $PATH
 
 RUN ndenv rehash
 RUN ndenv install v6.11.1
