@@ -11,11 +11,7 @@
 brew update
 brew install docker
 brew cask update
-brew cask install docker-toolbox
-
-  or
-
-brew cask reinstall docker-toolbox
+brew cask install docker
 ```
 
 
