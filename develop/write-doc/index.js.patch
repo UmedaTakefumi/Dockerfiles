@@ -1,0 +1,10 @@
+--- index.js.org	2017-07-29 16:27:24.000000000 +0900
++++ index.js	2017-07-29 15:21:38.000000000 +0900
+@@ -31,6 +31,7 @@ module.exports = {
+       'bower_components/mermaid/dist/mermaid.css'
+     ],
+     js: [
++      'bower_components/mermaid/dist/mermaid.min.js',
+       'plugin.js'
+     ],
+     html: {
