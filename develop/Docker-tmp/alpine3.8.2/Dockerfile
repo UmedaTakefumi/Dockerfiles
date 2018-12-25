@@ -1,4 +1,6 @@
 FROM alpine:3.8
+
+# https://pkgs.alpinelinux.org/packages
 RUN apk --update add bash \
   && rm -rf /var/cache/apk/*
 
