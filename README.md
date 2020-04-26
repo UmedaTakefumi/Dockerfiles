@@ -33,5 +33,15 @@ git checkout bash_centos6
 docker build .
 ```
 
+## bash_centos5
+
+* [bash_centos5](https://github.com/UmedaTakefumi/Dockerfiles/tree/bash_centos5)
+
+```
+git clone https://github.com/UmedaTakefumi/Dockerfiles.git
+cd Dockerfiles
+git checkout bash_centos5
+docker build .
+```
 
 
