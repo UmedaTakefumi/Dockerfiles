@@ -1,15 +1,29 @@
-# Dockerfiles
+# bash_alpine3.8
 
-## python_alpine3.8
+## usage
 
-* [python_alpine3.8](https://github.com/UmedaTakefumi/Dockerfiles/tree/python_alpine3.8)
+[sh-framework(shell-script)](https://github.com/UmedaTakefumi/sh-framework)
+
+## requirement
+
+## online-build
 
 ```
-git clone https://github.com/UmedaTakefumi/Dockerfiles.git
-cd Dockerfiles
-git checkout python_alpine3.8
-docker build .
+git clone https://github.com/UmedaTakefumi/bash_alpine3.8.git
+cd bash_alpine3.8.git
+docker build -t bash:alpine3.8 .
 ```
 
+## Run
+
+```
+docker run -it bash:alpine3.8
+```
+
+### Run / docker switch to root
+
+```
+docker run -u root -it bash:alpine3.8 
+```
 
 
