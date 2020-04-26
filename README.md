@@ -1,42 +1,28 @@
-# Dockerfile
+# python_alpine3.8
 
-## Dockerのインストール / Ubuntu 16.04 
+## usage
 
-```
-sudo apt-get update
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
+python-script development environment
+webapp, batch, machine learning and Statistical Data Analysis library
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+## requirement
 
-sudo apt-key fingerprint 0EBFCD88
-
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-sudo apt-get update
-sudo apt-get install docker-ce
-
-sudo groupadd docker
-
-sudo usermod -aG docker umetake
-```
-
-* https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#os-requirements
-
-## Dockerのインストール / MacOSX sierra
+## online-build
 
 ```
-brew update
-brew install docker
-brew cask update
-brew cask install docker
+git clone https://github.com/UmedaTakefumi/python_alpine3.8.git
+cd python_alpine3.8.git
+docker build -t python:alpine3.8 .
 ```
 
+## Run
 
+```
+docker run -it python:alpine3.8
+```
 
+### Run / docker switch to root
+
+```
+docker run -u root -it python:alpine3.8 
+```
