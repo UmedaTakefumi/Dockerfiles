@@ -22,7 +22,16 @@ git checkout bash_alpine3.8
 docker build .
 ```
 
+## bash_centos6
 
+* [bash_centos6](https://github.com/UmedaTakefumi/Dockerfiles/tree/bash_centos6)
+
+```
+git clone https://github.com/UmedaTakefumi/Dockerfiles.git
+cd Dockerfiles
+git checkout bash_centos6
+docker build .
+```
 
 
 
