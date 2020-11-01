@@ -1,5 +1,14 @@
 # Dockerfiles
 
+* [nginx_mysql_python](https://github.com/UmedaTakefumi/Dockerfiles/tree/nginx_mysql_python)
+
+```
+git clone https://github.com/UmedaTakefumi/Dockerfiles.git
+cd Dockerfiles
+git checkout nginx_mysql_python
+docker build .
+```
+
 ## python_alpine3.8
 
 * [python_alpine3.8](https://github.com/UmedaTakefumi/Dockerfiles/tree/python_alpine3.8)
