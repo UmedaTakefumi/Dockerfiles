@@ -4,8 +4,6 @@ services:
       build: ./
       ports:
           - "80:80"
-      depends_on:
-          - php
   python:
       image: nginx_mysql_python
       volumes:
