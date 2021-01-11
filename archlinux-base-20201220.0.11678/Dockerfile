@@ -47,5 +47,5 @@ RUN echo "Build start with USERNAME: $USERNAME UID: $UID GID: $GID" &&\
 WORKDIR /home/${USERNAME}
 USER ${USERNAME}
 
-
+RUN git clone https://github.com/UmedaTakefumi/dotfiles.git
 
